@@ -18,4 +18,8 @@ class Settings:
     # Java Backend API Config
     RELOAD_API: str = os.getenv("RELOAD_API", "http://localhost:8080/api/backtest/reload-model")
 
+    # Risk Control Settings
+    RISK_MAX_POSITION_RATIO: float = 0.2  # Max 20% of account per trade
+    RISK_DAILY_LOSS_LIMIT: float = 0.05  # Max 5% loss per day
+
 settings = Settings()
