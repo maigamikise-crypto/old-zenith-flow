@@ -1,3 +1,6 @@
 [submodule "docs/source-code/qlib"]
 	path = docs/source-code/qlib
 	url = https://github.com/microsoft/qlib.git
+[submodule "docs/source-code/vnpy"]
+	path = docs/source-code/vnpy
+	url = https://github.com/vnpy/vnpy.git

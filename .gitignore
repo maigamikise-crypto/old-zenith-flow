@@ -57,5 +57,3 @@ mysql_data/
 !/.cursor/rules/*.mdc
 
 # 参考源码项目 (Reference Source Code)
-/docs/source-code/qlib
-/docs/source-code/vnpy
