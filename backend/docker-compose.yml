@@ -1,0 +1,14 @@
+version: '2'
+services:
+  zenith-flow-admin:
+    image: zenith-flow/zenith-flow-admin
+    ports:
+    - "8080:8080"
+    environment:
+    - spring.profiles.active=dev
+  zenith-flow-tunnel:
+    image: zenith-flow/zenith-flow-tunnel
+    ports:
+    - "8081:8081"
+    environment:
+    - spring.profiles.active=dev

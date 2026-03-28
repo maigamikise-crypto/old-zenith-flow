@@ -1,0 +1,14 @@
+artifact_uri: file:C:\Users\wuxiao\workspace\x-projects\zenith-flow\zenith-flow-ai-engine\mlruns/551941046890237603/9114f3a8e12c49559a4e520fb2ec6ab4/artifacts
+end_time: 1765597363428
+entry_point_name: ''
+experiment_id: '551941046890237603'
+lifecycle_stage: active
+run_id: 9114f3a8e12c49559a4e520fb2ec6ab4
+run_name: mlflow_recorder
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765597362415
+status: 4
+tags: []
+user_id: wuxiao

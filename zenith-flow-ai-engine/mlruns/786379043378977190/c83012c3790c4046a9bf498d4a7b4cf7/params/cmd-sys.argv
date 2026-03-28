@@ -1,0 +1,1 @@
+src/zenith_ai/services/qlib_train_worker.py --config_path ../experiments/debug_test_1765623740_config.yaml --experiment_name worker_test_manual --provider_uri ~/.qlib/qlib_data/cn_data --mount_path ../experiments

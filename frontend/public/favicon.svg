@@ -1,0 +1,35 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 
+       配色方案：
+       从深邃的深海蓝 (#021C35) 向上流动，
+       爆发为高亮的量子青 (#00FFFF)，
+       象征从底层逻辑到顶层收益的转化。
+    -->
+    <linearGradient id="zenithGradient" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" style="stop-color:#021C35;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#004E92;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00FFFF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- 
+     主图形：
+     摒弃了细线条，使用饱满的块面。
+     这既是像山一样稳固的三角形，又是像水一样涌动的波浪。
+     坐标已撑满 512x512 画布，确保在浏览器标签上最大化显示。
+  -->
+  <path d="M 20,492 
+           C 160,492 180,350 256,120 
+           C 332,350 352,492 492,492 
+           L 20,492 Z" 
+        fill="url(#zenithGradient)" />
+        
+  <!-- 
+     Zenith (顶点)：
+     加大了尺寸（半径从25增加到55），位置上移。
+     它代表“不争而无人能争”的至高点，如明珠般悬浮。
+  -->
+  <circle cx="256" cy="65" r="55" fill="#00FFFF" />
+  
+</svg>

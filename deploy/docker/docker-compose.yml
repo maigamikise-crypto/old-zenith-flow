@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  timescaledb:
+    image: timescale/timescaledb:latest-pg14
+    container_name: zenith_timescaledb
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=zenith_flow
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./timescale_data:/var/lib/postgresql/data
+    restart: always
+

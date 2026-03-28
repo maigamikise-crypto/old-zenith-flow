@@ -1,0 +1,31 @@
+---
+alwaysApply: true
+---
+
+# Zenith Flow Cursor Rules
+
+## 1. 日志管理 (Dev Logs)
+- **Location**: `docs/dev-logs/` 目录。
+- **File Naming**: 必须遵守 `dev-log-YYYYMMDD.md` 格式 (e.g., `dev-log-20251128.md`)。
+- **Content Rule**:
+    - **APPEND ONLY**: 日志内容只允许追加，严禁删除或覆盖已有内容。
+    - **New File Per Day**: 每天开始工作时，必须创建一个新的日志文件。如果当天已有文件，则在其中追加。
+    - **Structure**: 每次记录应包含时间戳、完成事项 (Done)、下一步计划 (Next Steps) 和 遇到的问题 (Issues)。
+
+## 2. 代码规范 (Code Style)
+- **Backend (Java)**: Spring Boot 2.x (javax.*), MyBatis Plus, Lombok.
+- **Frontend (Vue)**: Vue 3 (Script Setup), Vite, Element Plus.
+- **Naming**: 移除特定框架前缀 (如 `renren`)，统一使用 `Zenith` 或通用命名。
+
+## 3. 架构约束 (Architecture)
+- **Backend**: `zenith-flow-admin` 是主应用，`zenith-flow-quant` 是作为 Maven Module 引入的。
+- **Database**:
+    - `MySQL`: 系统管理 (Admin) 数据。
+    - `PostgreSQL/TimescaleDB`: 量化 (Quant) 数据。
+    - 必须使用 `@DataSource("quant")` 注解进行数据源切换。
+
+## 4. 过程中使用的脚本放在 `deploy/scripts/`文件夹中
+
+## 5. 所有的sql脚本放在 `deploy/sql/`文件夹中
+
+

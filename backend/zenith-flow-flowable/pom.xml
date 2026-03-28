@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<groupId>com.zenithflow</groupId>
+		<artifactId>backend</artifactId>
+		<version>3.7.0</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>zenith-flow-flowable</artifactId>
+	<packaging>jar</packaging>
+	<description>zenith-flow-flowable</description>
+
+	<properties>
+		<shiro.version>1.10.1</shiro.version>
+		<flowable.version>6.8.0</flowable.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.zenithflow</groupId>
+			<artifactId>zenith-flow-common</artifactId>
+			<version>3.7.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.shiro</groupId>
+		    <artifactId>shiro-core</artifactId>
+		    <version>${shiro.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- 工作流 -->
+		<dependency>
+			<groupId>org.flowable</groupId>
+			<artifactId>flowable-spring-boot-starter-process</artifactId>
+			<version>${flowable.version}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>${project.artifactId}</finalName>
+	</build>
+
+</project>

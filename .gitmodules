@@ -1,0 +1,3 @@
+[submodule "docs/source-code/qlib"]
+	path = docs/source-code/qlib
+	url = https://github.com/microsoft/qlib.git

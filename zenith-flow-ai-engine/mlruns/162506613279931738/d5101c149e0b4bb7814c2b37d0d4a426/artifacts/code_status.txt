@@ -1,0 +1,44 @@
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   poetry.lock
+	modified:   pyproject.toml
+	modified:   src/zenith_ai/api/backtest.py
+	modified:   src/zenith_ai/api/train.py
+	modified:   src/zenith_ai/core/config.py
+	modified:   src/zenith_ai/services/__init__.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../.cursor/commands/
+	../docs/dev-logs/dev-log-20251203.md
+	../docs/dev-logs/dev-log-20251213.md
+	../experiments/
+	debug_backtest.txt
+	debug_backtest_2.txt
+	debug_backtest_3.txt
+	debug_backtest_4.txt
+	debug_backtest_5.txt
+	debug_backtest_6.txt
+	debug_backtest_7.txt
+	debug_output.txt
+	debug_output_2.txt
+	debug_output_3.txt
+	debug_sync.txt
+	docs/
+	import_debug.txt
+	mlruns/
+	pyproject.toml.bak
+	scripts/
+	src/zenith_ai/services/qlib_data_loader.py
+	src/zenith_ai/services/qlib_workflow_service.py
+	test_output.txt
+	tests/
+	torch_install_debug.txt
+	vendor/
+	verify_env.py
+
+no changes added to commit (use "git add" and/or "git commit -a")

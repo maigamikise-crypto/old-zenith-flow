@@ -1,0 +1,50 @@
+[tool.poetry]
+name = "zenith-flow-ai-engine"
+version = "0.1.0"
+description = "Quantitative trading engine for Zenith Flow"
+authors = ["Zenith Flow Team"]
+readme = "README.md"
+packages = [{include = "zenith_ai", from = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+# Qlib: Microsoft AI-oriented Quantitative Investment Platform
+# 注意：Windows 安装需要 Visual C++ Build Tools
+# 安装方式：pip install git+https://github.com/microsoft/qlib.git
+pyqlib = "^0.9.0"
+pandas = "*"
+numpy = "*"
+scikit-learn = "*"
+skl2onnx = "*"
+onnx = "*"
+sqlalchemy = "*"
+psycopg2-binary = "*"
+requests = "*"
+akshare = "*"
+baostock = "*"
+tushare = "*"
+fastapi = "^0.100.0"
+uvicorn = {extras = ["standard"], version = "^0.23.0"}
+pydantic = "^2.0.0"
+loguru = "^0.7.0"
+PyYAML = "6.0.1"
+httpx = "^0.27.0"
+catboost = "^1.2.8"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.0"
+mypy = "^1.0.0"
+pytest = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 120
+target-version = "py39"
+
+[tool.mypy]
+python_version = "3.9"
+strict = true
+ignore_missing_imports = true

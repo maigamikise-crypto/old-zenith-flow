@@ -1,0 +1,1 @@
+C:\Users\wuxiao\workspace\x-projects\zenith-flow\zenith-flow-ai-engine\src\zenith_ai\services\qlib_train_worker.py --config_path ..\experiments\test_e2e_1765601012_config.yaml --experiment_name test_e2e_1765601012 --provider_uri ~/.qlib/qlib_data/cn_data --mount_path ..\experiments

@@ -1,0 +1,1 @@
+C:\Users\wuxiao\workspace\x-projects\zenith-flow\zenith-flow-ai-engine\src\zenith_ai\services\qlib_train_worker.py --config_path ..\experiments\debug_LSTM_1766068097_config.yaml --experiment_name debug_LSTM_1766068097 --provider_uri ~/.qlib/qlib_data/cn_data --mount_path ..\experiments
