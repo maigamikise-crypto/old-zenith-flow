@@ -30,5 +30,32 @@ public interface AiEngineClient {
     @GetMapping("/data/index-stocks")
     List<String> getIndexStocks(@RequestParam("index_code") String indexCode);
 
+    /**
+     * 下单交易
+     * POST /trading/order
+     */
+    @PostMapping("/trading/order")
+    TradeResponse placeOrder(@RequestBody TradeRequest request);
+
+    /**
+     * 撤销订单
+     * POST /trading/cancel/{order_id}
+     */
+    @PostMapping("/trading/cancel/{orderId}")
+    Boolean cancelOrder(@RequestParam("orderId") String orderId, @RequestParam("account_id") String accountId);
+
+    /**
+     * 获取账户资产
+     * GET /trading/account/{account_id}
+     */
+    @GetMapping("/trading/account/{accountId}")
+    AccountInfo getAccountInfo(@RequestParam("accountId") String accountId);
+
+    /**
+     * 获取账户持仓
+     * GET /trading/positions/{account_id}
+     */
+    @GetMapping("/trading/positions/{accountId}")
+    List<PositionInfo> getPositions(@RequestParam("accountId") String accountId);
 }
 
